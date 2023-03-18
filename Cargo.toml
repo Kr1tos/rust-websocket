@@ -16,6 +16,9 @@ categories = ["asynchronous", "network-programming", "web-programming", "web-pro
 
 license = "MIT"
 
+[patch.crates-io]
+native-tls = { git = "https://github.com/Kr1tos/rust-native-tls.git", branch = "master", optional = true}
+
 [dependencies]
 hyper = "^0.10.6"
 unicase = "1.0"
@@ -28,7 +31,7 @@ tokio-tcp = { version = "0.1", optional = true }
 tokio-codec = { version = "0.1", optional = true }
 tokio-reactor = { version = "0.1", optional = true }
 bytes = { version = "0.4", optional = true }
-native-tls = { version = "0.2.1", optional = true }
+native-tls = { git = "https://github.com/Kr1tos/rust-native-tls.git", branch = "master", optional = true}
 websocket-base = { path = "websocket-base", version="0.26.5", default-features=false }
 
 [dev-dependencies]
